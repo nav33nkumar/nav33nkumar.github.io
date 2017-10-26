@@ -9,7 +9,8 @@
   </head>
   <body>
   <ul>
-    <span><li prefix="$">docker -v</li>Docker Version</span>
+    <li><span prefix="$">docker -v</span><span>Docker Version<span></li>
+    <li><span prefix="$">docker rm $(docker ps -a -f status=exited -q)</span><span>Removing all exited containers</span></li>
   </ul>
   </body>
 </html>
